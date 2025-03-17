@@ -17,7 +17,6 @@ class LoginPage:
         browser.element('[aria-label="Войти"]').click()
         time.sleep(1)
 
-
     @staticmethod
     def click_login_button():
         browser.element('[class="x-button x-button_primaryFilledWeb7184 x-button_56 _submit_q2ixp_38 ui-submit_button"]').click()
