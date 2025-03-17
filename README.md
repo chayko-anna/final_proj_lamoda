@@ -55,14 +55,14 @@
 
 #### Cтраница тестов Jenkins
 
-![Cтраница тестов Jenkins](https://github.com/yarskii/petrovich/blob/main/resources/screenshots/jenkins_home.png)
+![Cтраница тестов Jenkins]()
 
 Этот скриншот демонстрирует интерфейс Jenkins, где можно запускать тесты с различными параметрами и просматривать их
 статус.
 
 #### Общий отчёт Allure
 
-![Общий отчёт Allure](https://github.com/yarskii/petrovich/blob/main/resources/screenshots/allure_reports.png)
+![Общий отчёт Allure]()
 
 Здесь представлен общий отчет Allure, который содержит сводную информацию о результатах выполнения тестов: количество
 пройденных, упавших и пропущенных тестов.
@@ -71,7 +71,7 @@
 ### Отчет в Telegram
 
    <p align="center">
-      <img src="https://github.com/yarskii/petrovich/blob/main/resources/screenshots/telegram_report.png" alt="Отчет в Telegram"/>
+      <img src="" alt="Отчет в Telegram"/>
    </p>
 
 Пример автоматического уведомления в Telegram о результате выполнения тестов.
