@@ -1,8 +1,9 @@
-pytest>=7.4.3
-selene>=2.0.0rc4
-allure-pytest>=2.13.2
-python-dotenv==1.0.0
-requests~=2.27.1
-jsonschema>=4.21.1
+pytest~=8.3.3
+selene~=2.0.0rc9
+python-dotenv
+requests
 Appium-Python-Client>=3.1.1
 selenium~=4.28.1
+allure-pytest
+allure-python-commons~=2.13.5
+python-dotenv
