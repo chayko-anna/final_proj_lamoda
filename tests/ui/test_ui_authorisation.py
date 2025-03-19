@@ -40,7 +40,7 @@ def test_unsuccessful_authorisation(browser_settings):
         base.click_login_button()
 
     with allure.step('Fill in wrong credentials'):
-        login.fill_in_info()
+        login.wrong_pwd()
 
     with allure.step('Click login button'):
         login.click_login_button()
