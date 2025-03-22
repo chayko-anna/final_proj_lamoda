@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from selenium.webdriver.chrome.options import Options
 import os
 
-DEFAULT_BROWSER_VERSION = "100.0"
+DEFAULT_BROWSER_VERSION = "128.0"
 
 
 def pytest_addoption(parser):
@@ -15,7 +15,6 @@ def pytest_addoption(parser):
 @pytest.fixture(scope='function', autouse=True)
 def browser_settings(request):
     browser.config.base_url = "https://lamoda.ru"
-    browser.config.driver.maximize_window()
     browser_version = request.config.getoption('browser_version') or DEFAULT_BROWSER_VERSION
 
     load_dotenv()
@@ -40,6 +39,7 @@ def browser_settings(request):
         options=options)
 
     browser.config.driver = driver
+
     yield browser
 
     browser.quit()
