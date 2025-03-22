@@ -29,14 +29,13 @@ class LoginPage:
         time.sleep(1)
         browser.element('[class="x-button x-button_primaryFilledWeb7184 x-button_56 _submit_q2ixp_38 ui-submit_button"]').click()
 
-
     @staticmethod
     def click_login_button():
         browser.element('[class="x-button x-button_primaryFilledWeb7184 x-button_56 _submit_q2ixp_38 ui-submit_button"]').click()
 
     @staticmethod
     def unsuccessful_login_message_check():
-        browser.should(have.text('Неверный логин или пароль.'))
+        browser.element('[class="_message_u659g_58"]').should(have.text('Неверный логин или пароль.'))
 
 
 class BasePage:
