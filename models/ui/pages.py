@@ -49,7 +49,7 @@ class BasePage:
 
     @staticmethod
     def select_size():
-        browser.element('[class="_sizeValue_14ecl_285"]').click()
+        browser.element('[class="_select_14ecl_10"]').click()
         browser.element(by.text('36/38 RUS')).click()
 
     @staticmethod
