@@ -4,6 +4,7 @@ from selenium import webdriver
 from dotenv import load_dotenv
 from selenium.webdriver.chrome.options import Options
 import os
+import attach
 
 DEFAULT_BROWSER_VERSION = "128.0"
 
@@ -24,8 +25,8 @@ def browser_settings(request):
         "browserName": "chrome",
         "browserVersion": browser_version,
         "selenoid:options": {
-            "enableVNC": False,
-            "enableVideo": False
+            "enableVNC": True,
+            "enableVideo": True
         }
     }
     options.capabilities.update(capabilities)
@@ -41,5 +42,10 @@ def browser_settings(request):
     browser.config.driver = driver
 
     yield browser
+
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_html(browser)
+    attach.add_video(browser)
 
     browser.quit()
